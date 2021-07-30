@@ -1,0 +1,68 @@
+.social > a img {
+    align-items: center;
+}
+a {
+    word-spacing: 1px;
+    margin-right: 2px;
+}
+img {
+    margin-top: 10px !important;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.footer-layout {
+    text-align: center;
+    height: 150px;
+}
+
+.fill {
+    margin-top: 10px !important;
+    margin-right: 20px;
+    align-items: center;
+    font-size: 18px;
+}
+.mat-toolbar-row {
+    float: right;
+}
+.footer-image {
+    float: right;
+    width: 70%;
+    height: 30%;
+}
+.footer-title {
+    margin-top: 10px !important;
+    font-size: 30px;
+    font: italic;
+    padding: 5px;
+    align-items: center;
+    font-family:cursive;
+    color: brown;
+}
+@media only screen and (max-width: 64em) {
+    .fill {
+        margin-top: 10px !important;
+        text-align: center;
+        align-items: center;
+        float: none;
+    }
+    .footer-title {
+        margin-top: 10px !important;
+        font-size: 30px;
+        font: italic;
+        padding: 4px;
+        font-family:cursive;
+        color: brown;
+    }
+    img {
+        align-items: center;
+        margin-top: 10px !important;
+        width: 50px;
+        height: 40px !important;
+        float: none;
+    }
+    .footer-layout {
+        text-align: center;
+        height: 120px !important;
+    }
+}
