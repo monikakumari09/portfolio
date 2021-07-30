@@ -1,0 +1,54 @@
+<div >
+    <h1 class="skill-title"><b>Skills</b></h1>
+</div>
+<mat-grid-list cols="2" rowHeight="2:1" class="media-chart">
+  <mat-grid-tile>
+    <div class="chart">
+      <canvas baseChart width="400" height="300"
+              class="bar-chart1"
+              [datasets]="barChartData1"
+              [labels]="barChartLabels1"
+              [options]="barChartOptions1"
+              [legend]="barChartLegend1"
+              [chartType]="barChartType1">
+      </canvas>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="chart">
+      <canvas baseChart width="400" height="300"
+              class="bar-chart2"
+              [datasets]="barChartData2"
+              [labels]="barChartLabels2"
+              [options]="barChartOptions2"
+              [legend]="barChartLegend2"
+              [chartType]="barChartType2">
+      </canvas>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<div class="mobileView">
+  <div class="viewItem">
+  <img src="../assets/images/code.png">
+    <h3 class="viewTitle">Programming Languages</h3>
+    <p>HTMl, CSS, C, C++, Javascript, Java, Angular, React.js, Primeng</p>
+  </div>
+
+  <div class="viewItem">
+    <img src="../assets/images/frameworks.png">
+    <h3 class="viewTitle">Framewoks</h3>
+    <p>VS Code, Github, Eclipse</p>
+  </div>
+
+  <div class="viewItem">
+    <img src="../assets/images/tools.png">
+    <h3 class="viewTitle">Tools</h3>
+    <p>Jira, Confluence, Bitbucket, Developers-tool, Kibana, Portainer</p>
+  </div>
+</div>
+<div class="resume-download">Download my resume from here
+  <a target="_self" href="../assets/documents/Monika_Resume.pdf" download>
+    <img src="../assets/images/download.png" alt="" matTooltip="download"
+     matTooltipPosition="above">
+  </a>
+</div>

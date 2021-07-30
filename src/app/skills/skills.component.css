@@ -1,0 +1,83 @@
+.skill-title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 4px;
+}
+
+.chart {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}
+
+.resume-download {
+    height: 70px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:lightskyblue;
+font-family: monospace;
+color: maroon;
+text-align: center !important;
+}
+
+.mobileView {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.viewTitle {
+    color: blue;
+}
+.viewItem {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 64em) {
+    .skill-title {
+        text-align: center;
+        margin-top: 500px !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        word-spacing: 4px;
+    }
+    .media-chart {
+        float: none;
+        margin-top: 0;
+        height: 0;
+        display: none;
+        position: none;
+    }
+    .bar-chart1 {
+        display: block;
+        height: 269px !important;
+        width: 194px !important;
+    }
+    .bar-chart2 {
+        display: block;
+        height: 269px !important;
+        width: 194px !important;
+    }
+    .resume-download {
+        height: 70px !important;
+    }
+    .chart {
+        display: none;
+        scroll-behavior: smooth;
+    }
+    .mobileView {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        align-items: center;
+        text-align: center;
+    }
+    .viewTitle {
+        color: blue;
+    }
+
+}
