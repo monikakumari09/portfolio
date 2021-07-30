@@ -1,0 +1,30 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  img {
+      size: 20px !important;
+  }
+.a {
+padding: 5px;
+  }
+  .header {
+    height: 70px;
+    width: 100%;
+  }
+
+  .header-title {
+align-items: center;
+margin-right: 300px;
+  }
+
+  @media only screen and (max-width: 64em) {
+    .header-title {
+        display: none;
+          }
+          img {
+            height: 20% !important;
+            width: 20% !important;
+            font: none !important;
+        }
+    
+}
