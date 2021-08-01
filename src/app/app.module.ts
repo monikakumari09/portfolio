@@ -1,3 +1,4 @@
+import { CommentModule } from './comment/comment.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
@@ -18,11 +19,15 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { ButtonsModule, InputsModule } from 'angular-bootstrap-md'
-import { FooterComponent } from './footer/footer.component'
-
+import { FooterComponent } from './footer/footer.component';
+import { CertificationAchivementsComponent } from './certification-achivements/certification-achivements.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +35,12 @@ import { FooterComponent } from './footer/footer.component'
     HeaderComponent,
     AboutComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    CertificationAchivementsComponent,
+    PortfolioComponent,
   ],
   imports: [
+    CommentModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -45,11 +53,16 @@ import { FooterComponent } from './footer/footer.component'
     MatSidenavModule,
     ChartsModule,
     AngularTypewriterEffectModule,
+    MatExpansionModule,
     MatGridListModule,
     ButtonsModule,
-    InputsModule
+    MatFormFieldModule,
+    InputsModule,
+    MatMenuModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PortfolioComponent],
+
 })
 export class AppModule { }

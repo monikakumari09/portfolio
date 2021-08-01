@@ -18,16 +18,6 @@ img {
     align-items: center;
 }
 
-.resume-download {
-    height: 70px;
-    padding: 10px;
-    font-size: 20px;
-    background-color:lightskyblue;
-font-family: monospace;
-color: maroon;
-text-align: center !important;
-}
-
 .mobileView {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
@@ -63,9 +53,6 @@ text-align: center !important;
         display: block;
         height: 269px !important;
         width: 194px !important;
-    }
-    .resume-download {
-        height: 70px !important;
     }
     .chart {
         display: none;

@@ -1,0 +1,21 @@
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .panel-title {
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+  }
+  .panel-data {
+      margin-top: 20px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  @media only screen and (max-width: 64em) {
+    .panel-title {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+    }
+  }
