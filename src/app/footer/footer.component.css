@@ -5,11 +5,22 @@ a {
     word-spacing: 1px;
     margin-right: 2px;
 }
+.resume-download {
+    height: 70px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:lightskyblue;
+    font-family: monospace;
+    color: maroon;
+    text-align: center !important;
+    margin-top: 20px;
+}
 img {
     margin-top: 10px !important;
     align-items: center;
     width: 50px;
     height: 50px;
+    padding: 5px;
 }
 .footer-layout {
     text-align: center;
@@ -40,6 +51,10 @@ img {
     color: brown;
 }
 @media only screen and (max-width: 64em) {
+    .resume-download {
+        height: 100px !important;
+        margin-top: 10px !important;
+    }
     .fill {
         margin-top: 10px !important;
         text-align: center;
@@ -58,7 +73,7 @@ img {
         align-items: center;
         margin-top: 10px !important;
         width: 50px;
-        height: 40px !important;
+        height: 50px !important;
         float: none;
     }
     .footer-layout {

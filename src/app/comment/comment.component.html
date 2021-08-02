@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="title"><h3>Any suggestions or feedback is welcomed :)</h3></div>
+    <div class="card">
+        <div class="commentbox">
+            <div class="col-12 col-sm-12 header">
+                <h4>Comments ({{count}})</h4>
+            </div>
+            <div class="col-12 col-sm-12 body">
+                <div class="comment-container">
+                        <div class="comment-form">
+                                <app-commentbox (usercomment)="receiveComment($event)"></app-commentbox>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <app-comments-list [postComment]="comments" (countComments)="recieveCount($event)"></app-comments-list>
+    </div>
+</div>
+<div>
+    <!-- <button class="btn btn-info" routerLink="/portfolio" routerLinkActive="active">
+        Back to portfolio</button> -->
+</div>
