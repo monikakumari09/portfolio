@@ -21,6 +21,8 @@ export class CommentsListComponent {
   public loadComponent = false;
   public commentIndex = 0;
   public reply: Array<object> = [];
+  localStorage: Storage;
+
 
   // @ViewChildren decorator to grab elements from the host view
   /* The return type of ViewChildren is QueryList.
@@ -30,9 +32,12 @@ export class CommentsListComponent {
   automatically update the object items for you. */
   @ViewChildren (DatacontainerDirective) entry: QueryList<DatacontainerDirective>;
 
-  constructor(private resolver: ComponentFactoryResolver) { }
+  constructor(private resolver: ComponentFactoryResolver) {
+    this.localStorage = window.localStorage;
+   }
 
   ngOnInit() {
+    this.postComment = this.get();
   }
 
 
@@ -44,6 +49,7 @@ export class CommentsListComponent {
   removeComment(no) {
     this.postComment.splice(no, 1);
     this.countComments.emit(this.postComment);
+    this.set();
   }
 
   replyComment(index) {
@@ -56,6 +62,7 @@ export class CommentsListComponent {
       myRef.instance.userReplycomment.subscribe(
         data => {
           this.receiveReplyComment(data, index);
+          this.set();
         }
       );
       myRef.instance.deletNo.subscribe(
@@ -71,10 +78,19 @@ export class CommentsListComponent {
     this.postComment.forEach((element) => {
       if (element['commentId'] === i) {
         element['replyComment'].push(...$event);
+        this.set();
+
       }
     });
     this.loadComponent = false;
   }
 
+  set() {
+    this.localStorage.setItem("replyComments", JSON.stringify(this.postComment));
+}
+
+get(): any {
+    return JSON.parse(this.localStorage.getItem("replyComments"));
+}
 
 }

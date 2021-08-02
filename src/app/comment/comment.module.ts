@@ -16,7 +16,8 @@ import { CommonModule } from '@angular/common';
     ChildcommentComponent,
     DatacontainerDirective
   ],
-  providers: [],
+  providers: [
+  ],
   imports: [
     FormsModule,
     CommonModule,
